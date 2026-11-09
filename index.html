@@ -58,6 +58,8 @@
 @media(max-width:600px){.hero h1{font-size:1.8rem}.diff-grid{grid-template-columns:1fr}.matrix{font-size:.75rem}}
 </style>
 <script>const _l=localStorage.getItem("lang");if(_l)document.documentElement.lang=_l;</script>
+<script src="https://janrummel.github.io/ai-learning/jr.js"></script>
+<link rel="stylesheet" href="https://janrummel.github.io/ai-learning/jr.css">
 </head>
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
@@ -167,7 +169,7 @@
 <div class="mod-title"><span class="de">Was schiefgehen kann</span><span class="en">What Can Go Wrong</span></div>
 <div class="mod-desc"><span class="de">Echte Fails, Security, Kosten-Fallen, EU AI Act. Die Seite die kein Marketing zeigt.</span><span class="en">Real failures, security, cost traps, EU AI Act. The side no marketing shows.</span></div>
 <div class="mod-meta">
-<span style="background:rgba(248,81,73,.1);color:#f85149">⏱ ~15 min</span>
+<span style="background:rgba(248,81,73,.1);color:var(--red,#f85149)">⏱ ~15 min</span>
 </div>
 </a>
 
@@ -213,8 +215,10 @@
 <footer role="contentinfo">
 <a href="https://github.com/janrummel/agent-literacy"><span class="de">Quellcode auf GitHub</span><span class="en">Source on GitHub</span></a> · Made with ❤️ <span class="de">und Neugier</span><span class="en">and curiosity</span>
 <br><span style="font-size:.7rem"><span class="de">Fragen? <a href="https://linkedin.com/in/janrummel">Schreib mir auf LinkedIn.</a> · Teil des <a href="https://janrummel.github.io/ai-learning/">AI Learning Ökosystems</a></span><span class="en">Questions? <a href="https://linkedin.com/in/janrummel">Message me on LinkedIn.</a> · Part of the <a href="https://janrummel.github.io/ai-learning/">AI Learning Ecosystem</a></span></span>
-<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: März 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter.</span><span class="en">As of March 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter.</span></span>
+<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: November 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter.</span><span class="en">As of November 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter.</span></span>
 </footer>
+<div class="jr-fuss" role="contentinfo" aria-label="Anbieter">Von Jan Rummel · <a href="https://janrummel.eu/?ref=agent-literacy">janrummel.eu</a> · <a href="https://janrummel.eu/impressum.html">Impressum</a> · <a href="https://janrummel.eu/datenschutz.html">Datenschutz</a></div>
+
 
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});var a=document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`);a.classList.add('active');a.setAttribute('aria-pressed','true');localStorage.setItem('lang',l)}

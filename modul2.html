@@ -82,6 +82,8 @@
 }
 </style>
 <script>const _l=localStorage.getItem("lang");if(_l)document.documentElement.lang=_l;</script>
+<script src="https://janrummel.github.io/ai-learning/jr.js"></script>
+<link rel="stylesheet" href="https://janrummel.github.io/ai-learning/jr.css">
 </head>
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
@@ -101,7 +103,7 @@
 <div class="module-header" id="main-content">
 <div class="pills">
 <span style="background:rgba(63,185,80,.1);color:var(--green)">⏱ ~15 min</span>
-<span style="background:rgba(137,87,229,.1);color:#8957e5"><span class="de">Kernkompetenz</span><span class="en">Core Skill</span></span>
+<span style="background:rgba(137,87,229,.1);color:var(--purple)"><span class="de">Kernkompetenz</span><span class="en">Core Skill</span></span>
 </div>
 <p class="question"><span class="de">"Kann ich dem vertrauen?"</span><span class="en">"Can I trust this?"</span></p>
 <h1><span class="de">Modul 2: Vertrauen & Delegation</span><span class="en">Module 2: Trust & Delegation</span></h1>
@@ -280,7 +282,7 @@
 <!-- Running Example -->
 <section>
 <div style="background:rgba(137,87,229,.06);border:1px solid rgba(137,87,229,.2);border-radius:12px;padding:1.25rem;margin:1.5rem 0">
-<p style="font-size:.75rem;font-weight:700;color:#8957e5;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 TechCo: Kapitel 2</span><span class="en">📎 TechCo: Chapter 2</span></p>
+<p style="font-size:.75rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 TechCo: Kapitel 2</span><span class="en">📎 TechCo: Chapter 2</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6"><span class="de">Marco zeigt Lisa den Research-Output. Lisa ist beeindruckt, aber fragt: <em>"Können wir dem genug vertrauen um es an Kunden zu schicken?"</em> Marco überlegt: Der Agent hat das falsche Datum geliefert — was wenn das in einem Kundenbericht passiert?</span><span class="en">Marco shows Lisa the research output. Lisa is impressed but asks: <em>"Can we trust it enough to send to clients?"</em> Marco considers: The agent delivered a wrong date — what if that happens in a client report?</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6;margin-top:.5rem"><span class="de"><strong>Marcos Entscheidung:</strong> 🟡 Draft & Review. Der Agent entwirft, ein Berater prüft vor dem Versand. Für interne Recherche: 🟢 Fire & Forget. Für Kunden-Deliverables: Immer Review.</span><span class="en"><strong>Marco's decision:</strong> 🟡 Draft & Review. Agent drafts, a consultant reviews before sending. For internal research: 🟢 Fire & Forget. For client deliverables: Always review.</span></p>
 </div>
@@ -316,7 +318,7 @@
 .viz-matrix-green{background:rgba(63,185,80,.12);border-color:var(--green)}
 .viz-matrix-yellow{background:rgba(210,153,34,.08);border-color:var(--orange)}
 .viz-matrix-orange{background:rgba(210,153,34,.12);border-color:var(--orange)}
-.viz-matrix-red{background:rgba(248,81,73,.12);border-color:#f85149}
+.viz-matrix-red{background:rgba(248,81,73,.12);border-color:var(--red,#f85149)}
 @media(max-width:600px){.viz-matrix{font-size:.8rem}.viz-matrix>div{padding:.5rem}}
 </style>
 
@@ -478,8 +480,10 @@
 
 <footer role="contentinfo">
 <a href="https://github.com/janrummel/agent-literacy"><span class="de">Quellcode auf GitHub</span><span class="en">Source on GitHub</span></a> · <a href="index.html">🧭 Agent Literacy</a>
-<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: März 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of March 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
+<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: November 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of November 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
 </footer>
+<div class="jr-fuss" role="contentinfo" aria-label="Anbieter">Von Jan Rummel · <a href="https://janrummel.eu/?ref=agent-literacy">janrummel.eu</a> · <a href="https://janrummel.eu/impressum.html">Impressum</a> · <a href="https://janrummel.eu/datenschutz.html">Datenschutz</a></div>
+
 
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});var a=document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`);a.classList.add('active');a.setAttribute('aria-pressed','true');localStorage.setItem('lang',l)}

@@ -30,11 +30,11 @@
 .demo-box{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin:1.5rem 0;position:relative;overflow:hidden}
 .demo-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent)}
 .demo-step{border-left:2px solid var(--accent);padding-left:1rem;margin:.75rem 0}
-.demo-step.error{border-left-color:#f85149}
+.demo-step.error{border-left-color:var(--red,#f85149)}
 .demo-step.human{border-left-color:var(--green)}
 .demo-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem}
 .demo-label.agent{color:var(--accent)}
-.demo-label.error{color:#f85149}
+.demo-label.error{color:var(--red,#f85149)}
 .demo-label.human{color:var(--green)}
 .demo-content{color:var(--muted);font-size:.88rem;line-height:1.6}
 
@@ -79,6 +79,8 @@
 }
 </style>
 <script>const _l=localStorage.getItem("lang");if(_l)document.documentElement.lang=_l;</script>
+<script src="https://janrummel.github.io/ai-learning/jr.js"></script>
+<link rel="stylesheet" href="https://janrummel.github.io/ai-learning/jr.css">
 </head>
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
@@ -195,7 +197,7 @@
 .viz-loop{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap}
 .viz-loop-step{padding:.6rem .9rem;border-radius:8px;font-weight:600;font-size:.82rem;text-align:center;min-width:90px;border:2px solid var(--border)}
 .viz-loop-perceive{background:rgba(88,166,255,.1);color:var(--accent);border-color:var(--accent)}
-.viz-loop-think{background:rgba(137,87,229,.1);color:#8957e5;border-color:#8957e5}
+.viz-loop-think{background:rgba(137,87,229,.1);color:var(--purple);border-color:var(--purple)}
 .viz-loop-act{background:rgba(63,185,80,.1);color:var(--green);border-color:var(--green)}
 .viz-loop-observe{background:rgba(210,153,34,.1);color:var(--orange);border-color:var(--orange)}
 .viz-loop-arrow{color:var(--muted);font-size:1.2rem;font-weight:700}
@@ -324,7 +326,7 @@
 <!-- Running Example -->
 <section>
 <div style="background:rgba(137,87,229,.06);border:1px solid rgba(137,87,229,.2);border-radius:12px;padding:1.25rem;margin:1.5rem 0">
-<p style="font-size:.75rem;font-weight:700;color:#8957e5;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 Durchgängiges Beispiel: TechCo</span><span class="en">📎 Running Example: TechCo</span></p>
+<p style="font-size:.75rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 Durchgängiges Beispiel: TechCo</span><span class="en">📎 Running Example: TechCo</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6"><span class="de"><strong>TechCo</strong> ist eine Beratungsfirma mit 20 Leuten. Die Geschäftsführerin Lisa hat gehört, dass AI Agents die Produktivität steigern können. Sie bittet ihren Tech Lead Marco, das Thema zu evaluieren. In jedem Modul begleiten wir TechCo bei einer Entscheidung.</span><span class="en"><strong>TechCo</strong> is a consulting firm with 20 people. CEO Lisa heard that AI agents can boost productivity. She asks tech lead Marco to evaluate the topic. In every module, we follow TechCo through a decision.</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6;margin-top:.5rem"><span class="de"><strong>Modul 1:</strong> Marco testet einen Agent mit einer Research-Aufgabe. Der Agent liefert in 3 Minuten ein Briefing — inklusive einem falschen Datum. Marco denkt: <em>"Beeindruckend schnell. Aber kann ich dem vertrauen?"</em></span><span class="en"><strong>Module 1:</strong> Marco tests an agent with a research task. The agent delivers a briefing in 3 minutes — including a wrong date. Marco thinks: <em>"Impressively fast. But can I trust it?"</em></span></p>
 </div>
@@ -364,7 +366,7 @@
 <div>
 <strong><span class="de">Komplexe Finanzprognose erstellen</span><span class="en">Create a complex financial forecast</span></strong>
 <details><summary style="color:var(--accent);font-size:.8rem;cursor:pointer;margin-top:.25rem"><span class="de">Lösung zeigen</span><span class="en">Show solution</span></summary>
-<p style="color:var(--muted);font-size:.8rem;padding-top:.25rem"><span class="de">Agent kann es eingeschränkt · Risiko hoch → <strong style="color:#f85149">Nicht delegieren</strong> (Agent kann Daten sammeln, Mensch analysiert)</span><span class="en">Agent can partially · Risk high → <strong style="color:#f85149">Don't delegate</strong> (Agent collects data, human analyzes)</span></p>
+<p style="color:var(--muted);font-size:.8rem;padding-top:.25rem"><span class="de">Agent kann es eingeschränkt · Risiko hoch → <strong style="color:var(--red,#f85149)">Nicht delegieren</strong> (Agent kann Daten sammeln, Mensch analysiert)</span><span class="en">Agent can partially · Risk high → <strong style="color:var(--red,#f85149)">Don't delegate</strong> (Agent collects data, human analyzes)</span></p>
 </details>
 </div>
 </div>
@@ -487,8 +489,10 @@
 
 <footer role="contentinfo">
 <a href="https://github.com/janrummel/agent-literacy"><span class="de">Quellcode auf GitHub</span><span class="en">Source on GitHub</span></a> · <a href="index.html">🧭 Agent Literacy</a>
-<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: März 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of March 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
+<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: November 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of November 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
 </footer>
+<div class="jr-fuss" role="contentinfo" aria-label="Anbieter">Von Jan Rummel · <a href="https://janrummel.eu/?ref=agent-literacy">janrummel.eu</a> · <a href="https://janrummel.eu/impressum.html">Impressum</a> · <a href="https://janrummel.eu/datenschutz.html">Datenschutz</a></div>
+
 
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});var a=document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`);a.classList.add('active');a.setAttribute('aria-pressed','true');localStorage.setItem('lang',l)}
