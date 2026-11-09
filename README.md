@@ -4,7 +4,7 @@
 
 > 5 modules · ~1 hour · Framework-agnostic · Bilingual DE + EN · Free
 
-🌐 **[Start the course →](https://planck-lab.github.io/agent-literacy/)**
+🌐 **[Start the course →](https://janrummel.github.io/agent-literacy/)**
 
 ---
 
@@ -18,11 +18,11 @@ Instead, it teaches you to **understand, evaluate, and decide** — whether you'
 
 | # | Module | Core Question |
 |---|--------|--------------|
-| 1 | [The Agent in Action](https://planck-lab.github.io/agent-literacy/modul1.html) | "What just happened?" |
-| 2 | [Trust & Delegation](https://planck-lab.github.io/agent-literacy/modul2.html) | "Can I trust this?" |
-| 3 | [How Agents Collaborate](https://planck-lab.github.io/agent-literacy/modul3.html) | "How does it work?" |
-| 4 | [What Can Go Wrong](https://planck-lab.github.io/agent-literacy/modul4.html) | "What are the risks?" |
-| 5 | [Your Agent Strategy](https://planck-lab.github.io/agent-literacy/modul5.html) | "What do I do with this?" |
+| 1 | [The Agent in Action](https://janrummel.github.io/agent-literacy/modul1.html) | "What just happened?" |
+| 2 | [Trust & Delegation](https://janrummel.github.io/agent-literacy/modul2.html) | "Can I trust this?" |
+| 3 | [How Agents Collaborate](https://janrummel.github.io/agent-literacy/modul3.html) | "How does it work?" |
+| 4 | [What Can Go Wrong](https://janrummel.github.io/agent-literacy/modul4.html) | "What are the risks?" |
+| 5 | [Your Agent Strategy](https://janrummel.github.io/agent-literacy/modul5.html) | "What do I do with this?" |
 
 ## Features
 
