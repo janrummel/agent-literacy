@@ -66,6 +66,8 @@
 @media(max-width:600px){.module-header h1{font-size:1.4rem}.decision-grid{grid-template-columns:1fr}}
 </style>
 <script>const _l=localStorage.getItem("lang");if(_l)document.documentElement.lang=_l;</script>
+<script src="https://janrummel.github.io/ai-learning/jr.js"></script>
+<link rel="stylesheet" href="https://janrummel.github.io/ai-learning/jr.css">
 </head>
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
@@ -212,7 +214,7 @@
 <!-- Running Example -->
 <section>
 <div style="background:rgba(137,87,229,.06);border:1px solid rgba(137,87,229,.2);border-radius:12px;padding:1.25rem;margin:1.5rem 0">
-<p style="font-size:.75rem;font-weight:700;color:#8957e5;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 TechCo: Kapitel 5 (Abschluss)</span><span class="en">📎 TechCo: Chapter 5 (Final)</span></p>
+<p style="font-size:.75rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 TechCo: Kapitel 5 (Abschluss)</span><span class="en">📎 TechCo: Chapter 5 (Final)</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6"><span class="de">3 Monate später. Marco präsentiert Lisa das Fazit: Copilot hat sich für interne Research bewährt (🟢 Fire & Forget). Für Kunden-Deliverables nutzen sie Draft & Review (🟡). Custom-Build? <strong>Don't.</strong> Die 20-Personen-Firma hat weder Entwickler noch Budget dafür. Stattdessen: klare Richtlinien, $50/Monat Budget-Limit, kein Kundendaten-Input.</span><span class="en">3 months later. Marco presents Lisa the conclusion: Copilot proved valuable for internal research (🟢 Fire & Forget). For client deliverables they use Draft & Review (🟡). Custom build? <strong>Don't.</strong> The 20-person firm has neither developers nor budget for it. Instead: clear guidelines, $50/month budget cap, no client data input.</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6;margin-top:.5rem"><span class="de"><strong>Das Ergebnis:</strong> Kein AI-Hype, kein FOMO-Build, kein Sicherheitsvorfall. Einfach eine informierte Entscheidung. Genau das was Agent Literacy lehrt.</span><span class="en"><strong>The result:</strong> No AI hype, no FOMO build, no security incident. Just an informed decision. Exactly what Agent Literacy teaches.</span></p>
 </div>
@@ -281,13 +283,13 @@
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0">
 <div style="background:rgba(248,81,73,.06);border:1px solid rgba(248,81,73,.15);border-radius:10px;padding:1rem">
-<p style="font-size:.78rem;font-weight:700;color:#f85149;margin-bottom:.5rem">❌ <span class="de">Regeln (Empfehlungen)</span><span class="en">Rules (Suggestions)</span></p>
+<p style="font-size:.78rem;font-weight:700;color:var(--red,#f85149);margin-bottom:.5rem">❌ <span class="de">Regeln (Empfehlungen)</span><span class="en">Rules (Suggestions)</span></p>
 <ul style="font-size:.82rem;color:var(--muted);padding-left:1rem;line-height:1.6">
 <li><span class="de">System-Prompt: "Prüfe Quellen"</span><span class="en">System prompt: "Verify sources"</span></li>
 <li><span class="de">Learned Rule: "Review vor Deploy"</span><span class="en">Learned rule: "Review before deploy"</span></li>
 <li><span class="de">Skill-Datei: "Mindestens 3 Quellen"</span><span class="en">Skill file: "At least 3 sources"</span></li>
 </ul>
-<p style="font-size:.78rem;color:#f85149;margin-top:.5rem"><span class="de">→ Agent kann sie lesen und trotzdem übergehen</span><span class="en">→ Agent can read and still skip them</span></p>
+<p style="font-size:.78rem;color:var(--red,#f85149);margin-top:.5rem"><span class="de">→ Agent kann sie lesen und trotzdem übergehen</span><span class="en">→ Agent can read and still skip them</span></p>
 </div>
 <div style="background:rgba(63,185,80,.06);border:1px solid rgba(63,185,80,.15);border-radius:10px;padding:1rem">
 <p style="font-size:.78rem;font-weight:700;color:var(--green);margin-bottom:.5rem">✅ <span class="de">Enforcement (Infrastruktur)</span><span class="en">Enforcement (Infrastructure)</span></p>
@@ -350,7 +352,7 @@
 .viz-roadmap-phase1{border-color:var(--accent);background:rgba(88,166,255,.1)}
 .viz-roadmap-phase2{border-color:var(--green);background:rgba(63,185,80,.1)}
 .viz-roadmap-phase3{border-color:var(--orange);background:rgba(210,153,34,.1)}
-.viz-roadmap-phase4{border-color:#8957e5;background:rgba(137,87,229,.1)}
+.viz-roadmap-phase4{border-color:var(--purple);background:rgba(137,87,229,.1)}
 .viz-roadmap-num{font-size:1.5rem;font-weight:900;color:var(--accent);line-height:1}
 .viz-roadmap-title{font-size:.9rem;font-weight:700;margin-top:.2rem}
 .viz-roadmap-desc{font-size:.75rem;color:var(--muted);line-height:1.4;flex-grow:1}
@@ -570,8 +572,10 @@
 <footer role="contentinfo">
 <a href="https://github.com/janrummel/agent-literacy"><span class="de">Quellcode auf GitHub</span><span class="en">Source on GitHub</span></a> · <a href="index.html">🧭 Agent Literacy</a>
 <br><span style="font-size:.7rem;color:var(--muted)"><span class="de">Fragen? <a href="https://linkedin.com/in/janrummel">Schreib mir auf LinkedIn.</a></span><span class="en">Questions? <a href="https://linkedin.com/in/janrummel">Message me on LinkedIn.</a></span></span>
-<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: März 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of March 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
+<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: November 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of November 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
 </footer>
+<div class="jr-fuss" role="contentinfo" aria-label="Anbieter">Von Jan Rummel · <a href="https://janrummel.eu/?ref=agent-literacy">janrummel.eu</a> · <a href="https://janrummel.eu/impressum.html">Impressum</a> · <a href="https://janrummel.eu/datenschutz.html">Datenschutz</a></div>
+
 
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});var a=document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`);a.classList.add('active');a.setAttribute('aria-pressed','true');localStorage.setItem('lang',l)}

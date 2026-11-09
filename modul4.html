@@ -21,7 +21,7 @@
 .module-header .pills{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.75rem}
 .module-header .pills span{font-size:.7rem;padding:.15rem .5rem;border-radius:20px;font-weight:600}
 .module-header h1{font-size:1.8rem;margin-bottom:.25rem}
-.module-header .question{color:#f85149;font-style:italic;margin-bottom:.5rem}
+.module-header .question{color:var(--red,#f85149);font-style:italic;margin-bottom:.5rem}
 .module-header .lernziel{color:var(--muted);font-size:.85rem}
 .header-nav{display:flex;justify-content:space-between;margin-bottom:1rem;font-size:.85rem}
 .header-nav a{color:var(--accent);text-decoration:none}
@@ -30,7 +30,7 @@
 .fail-card h4{font-size:.9rem;margin-bottom:.35rem}
 .fail-card .what{color:var(--muted);font-size:.85rem;line-height:1.6;margin-bottom:.5rem}
 .fail-card .lesson{font-size:.85rem;line-height:1.6;padding:.5rem .75rem;background:rgba(248,81,73,.05);border-radius:6px;margin-top:.5rem}
-.fail-card .lesson strong{color:#f85149}
+.fail-card .lesson strong{color:var(--red,#f85149)}
 
 .cost-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.82rem}
 .cost-table th,.cost-table td{padding:.5rem .6rem;border:1px solid var(--border);text-align:left}
@@ -41,7 +41,7 @@
 
 .security-box{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin:1rem 0}
 .security-box h4{font-size:.9rem;margin-bottom:.5rem}
-.security-box .attack{color:#f85149;font-size:.82rem;font-style:italic;margin-bottom:.4rem}
+.security-box .attack{color:var(--red,#f85149);font-size:.82rem;font-style:italic;margin-bottom:.4rem}
 .security-box p{color:var(--muted);font-size:.85rem;line-height:1.6;margin:0}
 
 .timeline{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin:1.5rem 0}
@@ -65,6 +65,8 @@
 @media(max-width:600px){.module-header h1{font-size:1.4rem}}
 </style>
 <script>const _l=localStorage.getItem("lang");if(_l)document.documentElement.lang=_l;</script>
+<script src="https://janrummel.github.io/ai-learning/jr.js"></script>
+<link rel="stylesheet" href="https://janrummel.github.io/ai-learning/jr.css">
 </head>
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
@@ -83,7 +85,7 @@
 
 <div class="module-header" id="main-content">
 <div class="pills">
-<span style="background:rgba(248,81,73,.1);color:#f85149">⏱ ~15 min</span>
+<span style="background:rgba(248,81,73,.1);color:var(--red,#f85149)">⏱ ~15 min</span>
 <span style="background:rgba(210,153,34,.1);color:var(--orange)"><span class="de">Risiken</span><span class="en">Risks</span></span>
 </div>
 <p class="question"><span class="de">"Was kann schiefgehen?"</span><span class="en">"What can go wrong?"</span></p>
@@ -153,7 +155,7 @@
 .viz-risk-green{background:rgba(63,185,80,.12);border-color:var(--green)}
 .viz-risk-yellow{background:rgba(210,153,34,.12);border-color:var(--orange)}
 .viz-risk-orange{background:rgba(210,153,34,.2);border-color:var(--orange)}
-.viz-risk-red{background:rgba(248,81,73,.15);border-color:#f85149;font-weight:600}
+.viz-risk-red{background:rgba(248,81,73,.15);border-color:var(--red,#f85149);font-weight:600}
 .viz-risk-footer{grid-column:1/-1;background:var(--surface);font-size:.75rem;font-style:italic;color:var(--muted);border:none;padding:.4rem}
 @media(max-width:600px){.viz-risk-matrix{font-size:.8rem}.viz-risk-cell{min-height:50px;padding:.4rem}}
 </style>
@@ -201,7 +203,7 @@
 <div class="attack"><span class="de">Ein MCP-Server aus einer Registry enthält versteckten Code der Daten abgreift.</span><span class="en">An MCP server from a registry contains hidden code that exfiltrates data.</span></div>
 <p><span class="de">Agent-Systeme nutzen externe Tools (MCP-Server, Plugins, Skills). Jedes externe Tool ist ein Vertrauenspunkt. Wie bei npm/pip: Ein kompromittiertes Paket betrifft alle die es nutzen.</span><span class="en">Agent systems use external tools (MCP servers, plugins, skills). Every external tool is a trust point. Like npm/pip: One compromised package affects everyone who uses it.</span></p>
 <div style="background:rgba(248,81,73,.06);border:1px solid rgba(248,81,73,.2);border-radius:8px;padding:1rem;margin-top:.75rem">
-<p style="font-size:.82rem;font-weight:700;color:#f85149;margin-bottom:.4rem"><span class="de">🔴 Reales Beispiel (März 2026): LiteLLM Supply-Chain-Angriff</span><span class="en">🔴 Real Example (March 2026): LiteLLM Supply Chain Attack</span></p>
+<p style="font-size:.82rem;font-weight:700;color:var(--red,#f85149);margin-bottom:.4rem"><span class="de">🔴 Reales Beispiel (März 2026): LiteLLM Supply-Chain-Angriff</span><span class="en">🔴 Real Example (March 2026): LiteLLM Supply Chain Attack</span></p>
 <p style="font-size:.82rem;color:var(--muted);line-height:1.5"><span class="de">Ein kompromittiertes Python-Paket (LiteLLM, ein beliebter LLM-Proxy) enthielt Malware die gezielt <code>.env</code>-Dateien, SSH-Keys, <code>.gitconfig</code> und Shell-History harvested hat. Betroffen: Tausende Entwickler die das Paket routinemäßig installierten. Die Angriffsfläche eines Agent-Systems ist das gesamte Dateisystem — nicht nur der Agent selbst.</span><span class="en">A compromised Python package (LiteLLM, a popular LLM proxy) contained malware that specifically harvested <code>.env</code> files, SSH keys, <code>.gitconfig</code>, and shell history. Affected: Thousands of developers who routinely installed the package. The attack surface of an agent system is the entire filesystem — not just the agent itself.</span></p>
 </div>
 </div>
@@ -334,7 +336,7 @@
 <div class="timeline-desc"><span class="de">Regeln für General-Purpose AI Modelle (GPT-4, Claude, etc.)</span><span class="en">Rules for general-purpose AI models (GPT-4, Claude, etc.)</span></div>
 </div>
 <div class="timeline-item">
-<div class="timeline-date" style="color:#f85149"><span class="de">Aug 2026</span><span class="en">Aug 2026</span></div>
+<div class="timeline-date" style="color:var(--red,#f85149)"><span class="de">Aug 2026</span><span class="en">Aug 2026</span></div>
 <div class="timeline-desc"><strong><span class="de">Vollständige Durchsetzung — auch für Hochrisiko-AI-Systeme. Bußgelder bis zu €35 Millionen oder 7% des Jahresumsatzes.</span><span class="en">Full enforcement — including high-risk AI systems. Fines up to €35 million or 7% of annual turnover.</span></strong></div>
 </div>
 </div>
@@ -432,7 +434,7 @@
 <!-- Running Example -->
 <section>
 <div style="background:rgba(137,87,229,.06);border:1px solid rgba(137,87,229,.2);border-radius:12px;padding:1.25rem;margin:1.5rem 0">
-<p style="font-size:.75rem;font-weight:700;color:#8957e5;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 TechCo: Kapitel 4</span><span class="en">📎 TechCo: Chapter 4</span></p>
+<p style="font-size:.75rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 TechCo: Kapitel 4</span><span class="en">📎 TechCo: Chapter 4</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6"><span class="de">Nach 2 Wochen Copilot-Test meldet sich die Buchhaltung: <em>"Wir haben $180 an API-Zusatzkosten. Woher kommt das?"</em> 5 Berater haben den Agent intensiv genutzt — niemand hat auf Kosten geachtet. Außerdem hat ein Berater vertrauliche Kundendaten in einen Prompt kopiert.</span><span class="en">After 2 weeks of Copilot testing, accounting flags: <em>"We have $180 in extra API costs. Where did that come from?"</em> 5 consultants used the agent intensively — nobody watched costs. Plus, one consultant copied confidential client data into a prompt.</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6;margin-top:.5rem"><span class="de"><strong>Lisas Reaktion:</strong> Sofort Richtlinien: Kosten-Budget pro Person, keine Kundendaten in Prompts, wöchentliches Kosten-Review. Sie merkt: Die Risiko-Checkliste hätte <em>vor</em> dem Piloten kommen sollen.</span><span class="en"><strong>Lisa's reaction:</strong> Immediate guidelines: Cost budget per person, no client data in prompts, weekly cost review. She realizes: The risk checklist should have come <em>before</em> the pilot.</span></p>
 </div>
@@ -544,8 +546,10 @@
 
 <footer role="contentinfo">
 <a href="https://github.com/janrummel/agent-literacy"><span class="de">Quellcode auf GitHub</span><span class="en">Source on GitHub</span></a> · <a href="index.html">🧭 Agent Literacy</a>
-<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: März 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of March 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
+<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: November 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of November 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
 </footer>
+<div class="jr-fuss" role="contentinfo" aria-label="Anbieter">Von Jan Rummel · <a href="https://janrummel.eu/?ref=agent-literacy">janrummel.eu</a> · <a href="https://janrummel.eu/impressum.html">Impressum</a> · <a href="https://janrummel.eu/datenschutz.html">Datenschutz</a></div>
+
 
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});var a=document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`);a.classList.add('active');a.setAttribute('aria-pressed','true');localStorage.setItem('lang',l)}

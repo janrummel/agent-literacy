@@ -57,7 +57,7 @@
 .callout.purple{background:rgba(137,87,229,.06);border:1px solid rgba(137,87,229,.2)}
 
 .case-study{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin:1.5rem 0}
-.case-study .label{font-size:.7rem;font-weight:700;color:#8957e5;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem}
+.case-study .label{font-size:.7rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem}
 
 .fw-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin:1.5rem 0}
 .fw-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1rem}
@@ -80,6 +80,8 @@
 }
 </style>
 <script>const _l=localStorage.getItem("lang");if(_l)document.documentElement.lang=_l;</script>
+<script src="https://janrummel.github.io/ai-learning/jr.js"></script>
+<link rel="stylesheet" href="https://janrummel.github.io/ai-learning/jr.css">
 </head>
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
@@ -98,7 +100,7 @@
 
 <div class="module-header" id="main-content">
 <div class="pills">
-<span style="background:rgba(137,87,229,.1);color:#8957e5">⏱ ~15 min</span>
+<span style="background:rgba(137,87,229,.1);color:var(--purple)">⏱ ~15 min</span>
 <span style="background:rgba(88,166,255,.1);color:var(--accent)"><span class="de">Architektur</span><span class="en">Architecture</span></span>
 </div>
 <p class="question"><span class="de">"Wie funktioniert das unter der Haube?"</span><span class="en">"How does it work under the hood?"</span></p>
@@ -122,7 +124,7 @@
 <p><span class="de">Jedes Agent-System — ob von Google, Microsoft, einem Startup oder selbst gebaut — besteht aus vier Schichten:</span><span class="en">Every agent system — whether from Google, Microsoft, a startup, or self-built — consists of four layers:</span></p>
 
 <div class="arch-visual">
-<div class="arch-layer" style="background:rgba(137,87,229,.12);color:#8957e5"><span class="de">4. Skills — WAS der Agent kann</span><span class="en">4. Skills — WHAT the agent can do</span></div>
+<div class="arch-layer" style="background:rgba(137,87,229,.12);color:var(--purple)"><span class="de">4. Skills — WAS der Agent kann</span><span class="en">4. Skills — WHAT the agent can do</span></div>
 <div class="arch-arrow">↑</div>
 <div class="arch-layer" style="background:rgba(210,153,34,.12);color:var(--orange)"><span class="de">3. Gedächtnis — WAS der Agent weiß</span><span class="en">3. Memory — WHAT the agent knows</span></div>
 <div class="arch-arrow">↑</div>
@@ -248,7 +250,7 @@
 .viz-agent-a{background:rgba(88,166,255,.1);color:var(--accent);border-color:var(--accent)}
 .viz-agent-b{background:rgba(63,185,80,.1);color:var(--green);border-color:var(--green)}
 .viz-agent-c{background:rgba(210,153,34,.1);color:var(--orange);border-color:var(--orange)}
-.viz-exchange{padding:.8rem 1.2rem;border-radius:8px;text-align:center;background:rgba(137,87,229,.1);border:2px solid #8957e5;color:#8957e5;font-weight:600;font-size:.85rem}
+.viz-exchange{padding:.8rem 1.2rem;border-radius:8px;text-align:center;background:rgba(137,87,229,.1);border:2px solid #8957e5;color:var(--purple);font-weight:600;font-size:.85rem}
 .viz-exchange-sub{font-size:.7rem;color:var(--muted);font-weight:400}
 .viz-collab-arrow{color:var(--muted);font-size:1.3rem;font-weight:700}
 .viz-collab-row{display:flex;align-items:center;gap:.5rem;justify-content:center;width:100%}
@@ -278,7 +280,7 @@
 <div class="pattern-arrow">→</div>
 <div class="pattern-node" style="background:rgba(63,185,80,.15);color:var(--green)"><span class="de">Agent B<br>schreibt</span><span class="en">Agent B<br>writes</span></div>
 <div class="pattern-arrow">→</div>
-<div class="pattern-node" style="background:rgba(137,87,229,.15);color:#8957e5"><span class="de">Agent C<br>prüft</span><span class="en">Agent C<br>reviews</span></div>
+<div class="pattern-node" style="background:rgba(137,87,229,.15);color:var(--purple)"><span class="de">Agent C<br>prüft</span><span class="en">Agent C<br>reviews</span></div>
 </div>
 <p class="pattern-desc"><span class="de">Jeder Agent erledigt seinen Teil und gibt das Ergebnis an den nächsten weiter. Wie ein Staffellauf — klar, vorhersehbar, leicht zu debuggen.</span><span class="en">Each agent completes its part and passes the result to the next. Like a relay race — clear, predictable, easy to debug.</span></p>
 <p class="pattern-desc"><span class="de"><strong>Gut für:</strong> Workflows mit klaren Schritten (Research → Zusammenfassung → Review).</span><span class="en"><strong>Good for:</strong> Workflows with clear steps (Research → Summary → Review).</span></p>
@@ -289,7 +291,7 @@
 <div class="pattern-flow">
 <div class="pattern-node" style="background:rgba(88,166,255,.15);color:var(--accent)"><span class="de">Agent A<br>Thema 1</span><span class="en">Agent A<br>Topic 1</span></div>
 <div class="pattern-node" style="background:rgba(63,185,80,.15);color:var(--green)"><span class="de">Agent B<br>Thema 2</span><span class="en">Agent B<br>Topic 2</span></div>
-<div class="pattern-node" style="background:rgba(137,87,229,.15);color:#8957e5"><span class="de">Agent C<br>Thema 3</span><span class="en">Agent C<br>Topic 3</span></div>
+<div class="pattern-node" style="background:rgba(137,87,229,.15);color:var(--purple)"><span class="de">Agent C<br>Thema 3</span><span class="en">Agent C<br>Topic 3</span></div>
 </div>
 <div class="pattern-flow">
 <div class="pattern-arrow">↓</div>
@@ -308,7 +310,7 @@
 <div class="pattern-flow">
 <div class="pattern-node" style="background:rgba(88,166,255,.15);color:var(--accent)"><span class="de">Agent A<br>(Generalist)</span><span class="en">Agent A<br>(Generalist)</span></div>
 <div class="pattern-arrow"><span class="de">→ "Das ist eine Rechtsfrage" →</span><span class="en">→ "That's a legal question" →</span></div>
-<div class="pattern-node" style="background:rgba(248,81,73,.15);color:#f85149"><span class="de">Agent B<br>(Rechtsexperte)</span><span class="en">Agent B<br>(Legal Expert)</span></div>
+<div class="pattern-node" style="background:rgba(248,81,73,.15);color:var(--red,#f85149)"><span class="de">Agent B<br>(Rechtsexperte)</span><span class="en">Agent B<br>(Legal Expert)</span></div>
 </div>
 <p class="pattern-desc"><span class="de">Ein Agent erkennt dass er nicht der richtige für die Aufgabe ist und gibt sie an einen spezialisierten Agent weiter. Wie eine Telefonhotline die dich an die richtige Abteilung weiterleitet.</span><span class="en">An agent recognizes it's not the right one for the task and hands it off to a specialized agent. Like a phone hotline that transfers you to the right department.</span></p>
 <p class="pattern-desc"><span class="de"><strong>Gut für:</strong> Systeme mit spezialisierten Agents (Legal, Finance, Technical).</span><span class="en"><strong>Good for:</strong> Systems with specialized agents (Legal, Finance, Technical).</span></p>
@@ -357,7 +359,7 @@
 <!-- Running Example -->
 <section>
 <div style="background:rgba(137,87,229,.06);border:1px solid rgba(137,87,229,.2);border-radius:12px;padding:1.25rem;margin:1.5rem 0">
-<p style="font-size:.75rem;font-weight:700;color:#8957e5;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 TechCo: Kapitel 3</span><span class="en">📎 TechCo: Chapter 3</span></p>
+<p style="font-size:.75rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem"><span class="de">📎 TechCo: Kapitel 3</span><span class="en">📎 TechCo: Chapter 3</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6"><span class="de">Lisa fragt: <em>"Brauchen wir LangChain? Oder reicht Microsoft Copilot?"</em> Marco evaluiert: TechCo hat bereits Microsoft 365. Kein Entwicklerteam für Custom-Lösungen. Die Berater brauchen Research-Unterstützung, keine Code-Generierung.</span><span class="en">Lisa asks: <em>"Do we need LangChain? Or is Microsoft Copilot enough?"</em> Marco evaluates: TechCo already has Microsoft 365. No dev team for custom solutions. Consultants need research support, not code generation.</span></p>
 <p style="color:var(--muted);font-size:.85rem;line-height:1.6;margin-top:.5rem"><span class="de"><strong>Marcos Empfehlung:</strong> Kategorie "No-Code" — Copilot testen. Kein Framework, kein Custom-Build. Erst verstehen, was der Agent kann, dann entscheiden ob mehr nötig ist.</span><span class="en"><strong>Marco's recommendation:</strong> Category "No-Code" — test Copilot. No framework, no custom build. First understand what the agent can do, then decide if more is needed.</span></p>
 </div>
@@ -506,8 +508,10 @@
 
 <footer role="contentinfo">
 <a href="https://github.com/janrummel/agent-literacy"><span class="de">Quellcode auf GitHub</span><span class="en">Source on GitHub</span></a> · <a href="index.html">🧭 Agent Literacy</a>
-<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: März 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of March 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
+<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Stand: November 2026 · Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Keine Cookies. Cookielose Besuchszählung mit GoatCounter. Kommentare über Giscus (lädt Inhalte von giscus.app und GitHub).</span><span class="en">As of November 2026 · Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No cookies. Cookie-free visit counting with GoatCounter. Comments via Giscus (loads content from giscus.app and GitHub).</span></span>
 </footer>
+<div class="jr-fuss" role="contentinfo" aria-label="Anbieter">Von Jan Rummel · <a href="https://janrummel.eu/?ref=agent-literacy">janrummel.eu</a> · <a href="https://janrummel.eu/impressum.html">Impressum</a> · <a href="https://janrummel.eu/datenschutz.html">Datenschutz</a></div>
+
 
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});var a=document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`);a.classList.add('active');a.setAttribute('aria-pressed','true');localStorage.setItem('lang',l)}
