@@ -83,14 +83,14 @@
 </head>
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
-<nav class="lang-switch" role="navigation" aria-label="Language">
-<button class="lang-btn active" onclick="setLang('de')" aria-label="Switch to German">DE</button>
-<button class="lang-btn" onclick="setLang('en')" aria-label="Switch to English">EN</button>
-</nav>
+<div class="lang-switch" role="navigation" aria-label="Language">
+<button class="lang-btn active" onclick="setLang('de')" aria-label="Deutsch" aria-pressed="true">DE</button>
+<button class="lang-btn" onclick="setLang('en')" aria-label="English" aria-pressed="false">EN</button>
+</div>
 
 <main class="container" style="max-width:760px;margin:0 auto;padding:3rem 2rem 2rem">
 
-<div class="breadcrumb"><span class="de"><a href="index.html">🧭 Agent Literacy</a> › Modul 3: Wie Agents zusammenarbeiten</span><span class="en"><a href="index.html">🧭 Agent Literacy</a> › Module 3: How Agents Collaborate</span></div>
+<nav class="breadcrumb" aria-label="Breadcrumb"><span class="de"><a href="index.html">🧭 Agent Literacy</a> › Modul 3: Wie Agents zusammenarbeiten</span><span class="en"><a href="index.html">🧭 Agent Literacy</a> › Module 3: How Agents Collaborate</span></nav>
 <div class="header-nav">
 <a href="modul2.html"><span class="de">← Modul 2</span><span class="en">← Module 2</span></a>
 <a href="modul4.html"><span class="de">Modul 4 →</span><span class="en">Module 4 →</span></a>
@@ -184,7 +184,7 @@
 <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent)"></div>
 <h4 style="color:var(--accent)">MCP — Model Context Protocol</h4>
 <div class="by"><span class="de">Von Anthropic (2024) · De-facto-Standard</span><span class="en">By Anthropic (2024) · De facto standard</span></div>
-<p><span class="de"><strong>Was es tut:</strong> Verbindet Agents mit Tools. MCP definiert wie ein Agent einer Datenbank, einer API oder einem Dateisystem sagt was er will — und wie er die Antwort versteht.</span><span class="en"><strong>What it does:</strong> Connects agents to tools. MCP defines how an agent tells a database, an API, or a file system what it wants — and how it understands the response.</span></p>
+<p><span class="de"><strong>Was es tut:</strong> Verbindet Agents mit Tools. MCP (<a href="https://www.anthropic.com/news/model-context-protocol" style="color:var(--accent)">Anthropic, 2024</a>) definiert wie ein Agent einer Datenbank, einer API oder einem Dateisystem sagt was er will — und wie er die Antwort versteht.</span><span class="en"><strong>What it does:</strong> Connects agents to tools. MCP (<a href="https://www.anthropic.com/news/model-context-protocol" style="color:var(--accent)">Anthropic, 2024</a>) defines how an agent tells a database, an API, or a file system what it wants — and how it understands the response.</span></p>
 <p class="analogy"><span class="de">🔌 Analogie: MCP ist wie USB — ein universeller Anschluss für Tools. Egal welcher Agent, egal welches Tool.</span><span class="en">🔌 Analogy: MCP is like USB — a universal connector for tools. Any agent, any tool.</span></p>
 </div>
 
@@ -192,7 +192,7 @@
 <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--green)"></div>
 <h4 style="color:var(--green)">A2A — Agent-to-Agent Protocol</h4>
 <div class="by"><span class="de">Von Google (2025) · Aufkommender Standard</span><span class="en">By Google (2025) · Emerging standard</span></div>
-<p><span class="de"><strong>Was es tut:</strong> Lässt Agents miteinander sprechen. Während MCP Agent↔Tool verbindet, verbindet A2A Agent↔Agent. Agents können sich gegenseitig Aufgaben geben, Ergebnisse austauschen und ihre Fähigkeiten beschreiben.</span><span class="en"><strong>What it does:</strong> Lets agents talk to each other. While MCP connects Agent↔Tool, A2A connects Agent↔Agent. Agents can assign tasks to each other, exchange results, and describe their capabilities.</span></p>
+<p><span class="de"><strong>Was es tut:</strong> Lässt Agents miteinander sprechen (<a href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/" style="color:var(--accent)">Google, 2025</a>). Während MCP Agent↔Tool verbindet, verbindet A2A Agent↔Agent. Agents können sich gegenseitig Aufgaben geben, Ergebnisse austauschen und ihre Fähigkeiten beschreiben.</span><span class="en"><strong>What it does:</strong> Lets agents talk to each other (<a href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/" style="color:var(--accent)">Google, 2025</a>). While MCP connects Agent↔Tool, A2A connects Agent↔Agent. Agents can assign tasks to each other, exchange results, and describe their capabilities.</span></p>
 <p class="analogy"><span class="de">📡 Analogie: A2A ist wie ein Telefonnetz zwischen Agents — sie können sich anrufen, Aufträge weitergeben und Ergebnisse zurückmelden.</span><span class="en">📡 Analogy: A2A is like a phone network between agents — they can call each other, pass tasks, and report results back.</span></p>
 </div>
 
@@ -452,6 +452,36 @@
 <a href="modul4.html"><span class="de">Modul 4: Was schiefgehen kann →</span><span class="en">Module 4: What Can Go Wrong →</span></a>
 </div>
 
+<!-- ===== Lernziel-Check ===== -->
+<!-- a11y: self-check -->
+<section>
+<div style="background:rgba(63,185,80,.06);border:1px solid rgba(63,185,80,.15);border-radius:12px;padding:1.25rem;margin:1.5rem 0">
+<p style="font-size:.82rem;font-weight:700;color:var(--green);margin-bottom:.75rem"><span class="de">✅ Kannst du jetzt...</span><span class="en">✅ Can you now...</span></p>
+<ul style="font-size:.85rem;color:var(--muted);line-height:1.8;padding-left:1.25rem">
+<li><span class="de">...den Unterschied zwischen MCP und A2A erklären?</span><span class="en">...explain the difference between MCP and A2A?</span></li>
+<li><span class="de">...drei Multi-Agent Patterns benennen?</span><span class="en">...name three multi-agent patterns?</span></li>
+<li><span class="de">...einschätzen ob dein Use Case ein Framework braucht?</span><span class="en">...assess whether your use case needs a framework?</span></li>
+</ul>
+<p style="font-size:.78rem;color:var(--muted);margin-top:.5rem"><span class="de">Wenn ja: Weiter zu <a href="modul4.html" style="color:var(--accent)">Modul 4 →</a></span><span class="en">If yes: Continue to <a href="modul4.html" style="color:var(--accent)">Module 4 →</a></span></p>
+</div>
+</section>
+<!-- ===== Quellen ===== -->
+<a id="quellen-m3"></a>
+<section>
+<details aria-label="Quellen und Referenzen">
+<summary style="font-size:1rem;font-weight:700;cursor:pointer"><span class="de">📚 Quellen & Referenzen</span><span class="en">📚 Sources & References</span></summary>
+<ol style="font-size:.8rem;color:var(--muted);line-height:1.8;margin-top:1rem;padding-left:1.25rem">
+<li>Anthropic (2024). <em>Introducing the Model Context Protocol.</em> <a href="https://www.anthropic.com/news/model-context-protocol">anthropic.com</a> <span style="color:var(--green)">[Tier B]</span></li>
+<li>Anthropic (2025). <em>Model Context Protocol Specification.</em> <a href="https://modelcontextprotocol.io/specification/2025-11-25">modelcontextprotocol.io</a> <span style="color:var(--accent)">[Tier A — Standard]</span></li>
+<li>Google (2025). <em>Announcing the Agent2Agent Protocol (A2A).</em> <a href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/">developers.googleblog.com</a> <span style="color:var(--green)">[Tier B]</span></li>
+<li>Linux Foundation (2025). <em>Agent2Agent Protocol.</em> <a href="https://github.com/a2aproject/A2A">github.com/a2aproject/A2A</a> <span style="color:var(--green)">[Tier B — Open Standard]</span></li>
+<li>Talebirad, Y. & Nadiri, A. (2023). <em>Multi-Agent Collaboration: Harnessing the Power of Intelligent LLM Agents.</em> arXiv. <a href="https://arxiv.org/abs/2306.03314">arxiv.org</a> <span style="color:var(--accent)">[Tier A]</span></li>
+<li>DataCamp (2025). <em>CrewAI vs LangGraph vs AutoGen.</em> <a href="https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen">datacamp.com</a> <span style="color:var(--green)">[Tier B]</span></li>
+</ol>
+</details>
+</section>
+
+
 <!-- Giscus Feedback Widget -->
 <section class="feedback-section" style="max-width: 800px; margin: 3rem auto; padding: 0 1rem;">
   <h2 style="color: #e0e0e0; font-size: 1.3rem; margin-bottom: 1rem;">💬 Feedback & Fragen</h2>
@@ -480,12 +510,10 @@
 </footer>
 
 <script>
-function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
+function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});var a=document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`);a.classList.add('active');a.setAttribute('aria-pressed','true');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
 <button class="back-to-top" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
 <script>const b=document.querySelector(".back-to-top");window.addEventListener("scroll",()=>{b.style.display=window.scrollY>400?"flex":"none"})</script>
-<!-- GoatCounter Analytics - code wird nach Account-Setup eingesetzt -->
 <script data-goatcounter="https://janrummel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-
 </body></html>

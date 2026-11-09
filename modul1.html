@@ -82,14 +82,14 @@
 </head>
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
-<nav class="lang-switch" role="navigation" aria-label="Language">
-<button class="lang-btn active" onclick="setLang('de')" aria-label="Switch to German">DE</button>
-<button class="lang-btn" onclick="setLang('en')" aria-label="Switch to English">EN</button>
-</nav>
+<div class="lang-switch" role="navigation" aria-label="Language">
+<button class="lang-btn active" onclick="setLang('de')" aria-label="Deutsch" aria-pressed="true">DE</button>
+<button class="lang-btn" onclick="setLang('en')" aria-label="English" aria-pressed="false">EN</button>
+</div>
 
 <main class="container" style="max-width:760px;margin:0 auto;padding:3rem 2rem 2rem">
 
-<div class="breadcrumb"><span class="de"><a href="index.html">🧭 Agent Literacy</a> › Modul 1: Der Agent in Aktion</span><span class="en"><a href="index.html">🧭 Agent Literacy</a> › Module 1: The Agent in Action</span></div>
+<nav class="breadcrumb" aria-label="Breadcrumb"><span class="de"><a href="index.html">🧭 Agent Literacy</a> › Modul 1: Der Agent in Aktion</span><span class="en"><a href="index.html">🧭 Agent Literacy</a> › Module 1: The Agent in Action</span></nav>
 <div class="header-nav">
 <a href="index.html">🧭 <span class="de">Übersicht</span><span class="en">Overview</span></a>
 <a href="modul2.html"><span class="de">Modul 2 →</span><span class="en">Module 2 →</span></a>
@@ -175,7 +175,7 @@
 
 <h3><span class="de">Die Agent-Schleife</span><span class="en">The Agent Loop</span></h3>
 
-<p><span class="de">Jeder Agent — egal welches Framework, egal welcher Anbieter — folgt im Kern dem gleichen Muster:</span><span class="en">Every agent — regardless of framework or provider — follows the same core pattern:</span></p>
+<p><span class="de">Jeder Agent — egal welches Framework, egal welcher Anbieter — folgt im Kern dem gleichen Muster. In der Forschung heißt es <em>ReAct</em> (<a href="https://arxiv.org/abs/2210.03629" style="color:var(--accent)">Yao et al., 2022</a>): Reasoning und Acting verschränkt in einer Schleife.</span><span class="en">Every agent — regardless of framework or provider — follows the same core pattern. In research it's called <em>ReAct</em> (<a href="https://arxiv.org/abs/2210.03629" style="color:var(--accent)">Yao et al., 2022</a>): Reasoning and Acting interleaved in a loop.</span></p>
 
 <figure style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin:1.5rem 0;text-align:center">
 <div class="viz-loop">
@@ -213,8 +213,8 @@
 
 <div class="callout green">
 <strong><span class="de">Das ist der Kern.</span><span class="en">That's the core.</span></strong>
-<span class="de">Alles andere — MCP, LangChain, CrewAI, OpenClaw — sind Implementierungen dieses Musters. Das Muster selbst ist älter als ChatGPT — es basiert auf dem Sense-Plan-Act-Paradigma aus der Robotik (1960er) und dem BDI-Modell (Belief-Desire-Intention, Rao &amp; Georgeff, 1995).</span>
-<span class="en">Everything else — MCP, LangChain, CrewAI, OpenClaw — are implementations of this pattern. The pattern predates ChatGPT — it's based on the Sense-Plan-Act paradigm from robotics (1960s) and the BDI model (Belief-Desire-Intention, Rao &amp; Georgeff, 1995).</span>
+<span class="de">Alles andere — MCP, LangChain, CrewAI, OpenClaw — sind Implementierungen dieses Musters. Das Muster selbst ist älter als ChatGPT — es basiert auf dem Sense-Plan-Act-Paradigma aus der Robotik (<a href="https://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/strips.pdf" style="color:var(--accent)">Fikes &amp; Nilsson, 1971</a>) und dem BDI-Modell (Belief-Desire-Intention, <a href="#quellen-m1" style="color:var(--accent)">Rao &amp; Georgeff, 1995</a>).</span>
+<span class="en">Everything else — MCP, LangChain, CrewAI, OpenClaw — are implementations of this pattern. The pattern predates ChatGPT — it's based on the Sense-Plan-Act paradigm from robotics (<a href="https://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/strips.pdf" style="color:var(--accent)">Fikes &amp; Nilsson, 1971</a>) and the BDI model (Belief-Desire-Intention, <a href="#quellen-m1" style="color:var(--accent)">Rao &amp; Georgeff, 1995</a>).</span>
 </div>
 </section>
 
@@ -434,6 +434,35 @@
 <a href="modul2.html"><span class="de">Modul 2: Vertrauen & Delegation →</span><span class="en">Module 2: Trust & Delegation →</span></a>
 </div>
 
+<!-- ===== Lernziel-Check ===== -->
+<!-- a11y: self-check -->
+<section>
+<div style="background:rgba(63,185,80,.06);border:1px solid rgba(63,185,80,.15);border-radius:12px;padding:1.25rem;margin:1.5rem 0">
+<p style="font-size:.82rem;font-weight:700;color:var(--green);margin-bottom:.75rem"><span class="de">✅ Kannst du jetzt...</span><span class="en">✅ Can you now...</span></p>
+<ul style="font-size:.85rem;color:var(--muted);line-height:1.8;padding-left:1.25rem">
+<li><span class="de">...den Unterschied zwischen einem Chatbot und einem Agent erklären?</span><span class="en">...explain the difference between a chatbot and an agent?</span></li>
+<li><span class="de">...die vier Schritte der Agent-Schleife benennen?</span><span class="en">...name the four steps of the agent loop?</span></li>
+<li><span class="de">...für eine Aufgabe einschätzen ob ein Agent sie übernehmen kann?</span><span class="en">...assess whether an agent can handle a given task?</span></li>
+</ul>
+<p style="font-size:.78rem;color:var(--muted);margin-top:.5rem"><span class="de">Wenn ja: Weiter zu <a href="modul2.html" style="color:var(--accent)">Modul 2 →</a></span><span class="en">If yes: Continue to <a href="modul2.html" style="color:var(--accent)">Module 2 →</a></span></p>
+</div>
+</section>
+<!-- ===== Quellen ===== -->
+<a id="quellen-m1"></a>
+<section>
+<details aria-label="Quellen und Referenzen">
+<summary style="font-size:1rem;font-weight:700;cursor:pointer"><span class="de">📚 Quellen & Referenzen</span><span class="en">📚 Sources & References</span></summary>
+<ol style="font-size:.8rem;color:var(--muted);line-height:1.8;margin-top:1rem;padding-left:1.25rem">
+<li>Yao, S. et al. (2022). <em>ReAct: Synergizing Reasoning and Acting in Language Models.</em> ICLR 2023. <a href="https://arxiv.org/abs/2210.03629">arxiv.org/abs/2210.03629</a> <span style="color:var(--accent)">[Tier A]</span></li>
+<li>Fikes, R. & Nilsson, N. (1971). <em>STRIPS: A New Approach to the Application of Theorem Proving to Problem Solving.</em> Artificial Intelligence 2(3-4). <a href="https://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/strips.pdf">PDF</a> <span style="color:var(--accent)">[Tier A]</span></li>
+<li>Nilsson, N. (1984). <em>Shakey the Robot.</em> SRI Technical Note 323. <a href="https://ai.stanford.edu/~nilsson/OnlinePubs-Nils/shakey-the-robot.pdf">PDF</a> <span style="color:var(--accent)">[Tier A]</span></li>
+<li>Schick, T. et al. (2023). <em>Toolformer: Language Models Can Teach Themselves to Use Tools.</em> Meta AI. <a href="https://arxiv.org/abs/2302.04761">arxiv.org/abs/2302.04761</a> <span style="color:var(--accent)">[Tier A]</span></li>
+<li>Rao, A. & Georgeff, M. (1995). <em>BDI Agents: From Theory to Practice.</em> ICMAS-95. <span style="color:var(--accent)">[Tier A]</span></li>
+</ol>
+</details>
+</section>
+
+
 <!-- Giscus Feedback Widget -->
 <section class="feedback-section" style="max-width: 800px; margin: 3rem auto; padding: 0 1rem;">
   <h2 style="color: #e0e0e0; font-size: 1.3rem; margin-bottom: 1rem;">💬 Feedback & Fragen</h2>
@@ -462,12 +491,10 @@
 </footer>
 
 <script>
-function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
+function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});var a=document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`);a.classList.add('active');a.setAttribute('aria-pressed','true');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
 <button class="back-to-top" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
 <script>const b=document.querySelector(".back-to-top");window.addEventListener("scroll",()=>{b.style.display=window.scrollY>400?"flex":"none"})</script>
-<!-- GoatCounter Analytics - code wird nach Account-Setup eingesetzt -->
 <script data-goatcounter="https://janrummel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-
 </body></html>

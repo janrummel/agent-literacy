@@ -3,6 +3,14 @@
 This course was co-created by a human (Jan) and an AI agent system (Planck, running on OpenClaw).
 The changelog documents the actual creation process — including mistakes and corrections.
 
+
+## 2026-11-09 — Merged with agent-systems
+
+- The same course had been maintained in two repositories since 24 March 2026 (agent-literacy and agent-systems).
+- Merged into this repository: sources and references, learning-goal checks, accessibility pass and fact check from agent-systems (Bansal et al. 2021: the "up to 83 % accuracy" claim removed; MCP download figures sourced).
+- Kept from agent-literacy: shared design system, visualisations, per-module preview images, quick-win teaser, Giscus feedback.
+- agent-systems now forwards every page to the same page here.
+
 ## 2026-03-24 — Course Created
 
 ### 20:30 — Strategic Pivot
@@ -49,3 +57,17 @@ This is not a polished process. It's an honest one.
 ---
 
 *Every commit in this repository's git log is part of the story.*
+
+## 2026-03-25 — Learnings einpflegen
+
+### Supply Chain + Context Injection (Modul 4)
+- **Reales Beispiel hinzugefügt:** LiteLLM Supply-Chain-Angriff (März 2026)
+- **Neuer Angriffsvektor:** Context Injection (Manipulation von Config-Dateien die der Agent lädt)
+- **Jim Fan Zitat** zur erweiterten Angriffsfläche
+- Grundregel erweitert: "...und alles was er liest"
+
+### Enforcement vs. Rules (Modul 5)
+- **Neue Sektion:** "Regeln vs. Enforcement: Die wichtigste Erkenntnis"
+- AWS-Quelle zitiert: "Prompts are suggestions. Hooks are enforcement."
+- Vergleichstabelle: Regeln (Empfehlungen) vs. Enforcement (Infrastruktur)
+- Basiert auf eigener Erfahrung: 4/10 Regeln in einer Session ignoriert
